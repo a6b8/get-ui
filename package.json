@@ -1,0 +1,17 @@
+{
+    "name": "get-ui",
+    "version": "2.0.0",
+    "type": "module",
+    "bin": {
+        "getui": "./src/cli.mjs"
+    },
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/.bin/jest",
+        "test:coverage:src": "node --experimental-vm-modules node_modules/.bin/jest --coverage --collectCoverageFrom='src/**/*.mjs'",
+        "test:file": "node --experimental-vm-modules node_modules/.bin/jest"
+    },
+    "devDependencies": {
+        "@jest/globals": "^30.0.0",
+        "jest": "^30.0.0"
+    }
+}
